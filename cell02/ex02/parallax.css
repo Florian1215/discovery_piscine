@@ -8,14 +8,14 @@
 
 section {
     position: relative;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     display: flex;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-items: center;
-    text-align: center;
 }
 
 .black {
