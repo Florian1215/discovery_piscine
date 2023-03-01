@@ -1,0 +1,31 @@
+body {
+    font-family: Cantarell;
+    font-size: 20px;
+    padding: 20px 50px;
+    background-color: #F5E9CF;
+    color: #4D455D;
+}
+
+a:link {
+    text-decoration: none;
+    color: #7DB9B6;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #E96479;
+}
+
+.menu{
+    position: absolute;
+    padding-left: 80px;
+    display: none;
+}
+
+.hover .menu {
+    position: relative;
+}
+
+.hover:hover .menu {
+    display: block;
+}
