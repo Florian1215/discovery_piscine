@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CVs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/title.css">
+</head>
+<body>
+
+<!-- NAV BAR-->
+<div class="nav">
+    <ul>
+        <li>
+            <a class="icon" href="index.html">
+                <img  src="ICON/home.png">
+                <p>Home</p>
+            </a>
+        </li>
+        <li>
+            <a class="icon" href="index.html">
+                <img src="ICON/about.png">
+                <p>About</p>
+            </a>
+        </li>
+        <li>
+            <a class="icon" href="index.html">
+                <img src="ICON/resume.png">
+                <p>Resume</p>
+            </a>
+        </li>
+        <li>
+            <a class="icon" href="#contact">
+                <img src="ICON/contact.png">
+                <p>Contact</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Main -->
+<section>
+    <div class="main" style="width: 100%">
+        <a href="#img1">
+            <img class="pp" src="IMG/cat.png">
+            <h1>Clara Doche</h1>
+        </a>
+        <a href="#img2">
+            <img class="pp" src="IMG/goat.png">
+            <h1>Florian Guiramand</h1>
+        </a>
+    </div>
+</section>
+
+<!-- Page CD -->
+<section class="pres" id="img1" style="background-color: #E6BEBE">
+        <div>
+            <h1 class="titre">Clara Doche</h1>
+            <div id="txt_icon">
+                <p class="job">I'm a popstar</p>
+                <img id="micro" src="./ICON/micro.png">
+            </div>
+        </div>
+</section>
+
+<section style="background-color: #E6BEBE">
+    <div>
+        <h4>CNSMDL</h4>
+        <h5>2019-2022</h5>
+        <p>Super experience dans laquelle j'ai pu apprendre um instrument de musique. Cela m'a permis d'eveiller mes sens et resynchroniser nes chakras.</p>
+
+        <h4>Ecole 42</h4>
+        <h5>2023</h5>
+        <p>Merveilleux stage qui m'a appris un tas de chose sur le codage comme sur les humains</p>
+    </div>
+</section>
+
+
+<!-- Page FG -->
+<section class="pres" id="img2" style="background-color: #E6BEBE">
+    <div>
+        <h1 class="titre">Florian Guiramand</h1>
+        <div id="txt_icon">
+            <p class="job">I'm the president of the republic</p>
+            <img id="micro" src="./ICON/pres.png">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h4>ENA</h4>
+        <h5>1998 - 2002</h5>
+        <p>J'ai brillamment réussi le cursus de l'ENA, du fait de ma grande intelligence. J'ai appris beaucoup de chose notamment éliminer toute la négativité pour me resynchroniser à mon espace intérieur</p>
+
+        <h4>Palais de l'Élysée</h4>
+        <h5>2018 - 2023</h5>
+        <p>Suite à ce brillant parcours, j'ai été repérer par le président de la république, lui-même, ce qui ma permis de rejoindre le cabinet de conseil de l'Élysée. Malheureusement suite à des différents politiques, j'ai démission de mes fonctions (notamment à propos d'une histoire de retraite ...)</p>
+
+        <h4>La Lune</h4>
+        <h5>2023 - présent</h5>
+        <p>J'ai par la suite été mis en relations avec Elon Musk et Neil Armstrong en 2021, afin d'effectuer une mission sur la lune. J'ai ainsi été le premier français à avoir posé un pied sur la lune, et franchement pas terrible le voyage, les sièges tremblaient et il y avait beaucoup de bruits. Tout cela me rend très humble, sur mon incroyable intelligence et ma superbe beauté intérieure (en toute modestie).</p>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section style="background-color: #7DB9B6">
+    <div id="contact">
+        <div class="info">
+            <div class="block">
+                <img class="contact" src="./ICON/localisation.png">
+                <div class="txt">
+                    <h3>Localisation:</h3>
+                    <p>78 route de Paris, 69260 Charbonnières-les-bains</p>
+                </div>
+            </div>
+            <div class="block">
+                <img class="contact" src="./ICON/contact.png">
+                <div class="txt">
+                    <h3>Email:</h3>
+                    <p>cdoche@student.42lyon.fr</p>
+                </div>
+            </div>
+            <div class="block">
+                <img class="contact" src="./ICON/phone.png">
+                <div class="txt">
+                    <h3>Appelez</h3>
+                    <p>06 48 94 33 44</p>
+                </div>
+            </div>
+        </div>
+        <!--    Div Fomulaire de contact-->
+        <div class="info">
+            <form>
+                <div id="name_email">
+                    <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+                    <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit">Envoyer votre message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
