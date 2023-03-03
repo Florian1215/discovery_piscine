@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explode this balloon</title>
+</head>
+<style>
+    .red {
+        background-color: #F47C7C;
+    }
+
+    .blue {
+        background-color: #70A1D7;
+    }
+
+    .green {
+        background-color: #A1DE93;
+    }
+</style>
+<script>
+    function add_px(current)
+    {
+        let new_size = parseInt(current) + 10
+        return new_size.toString() + 'px';
+    }
+    function update_balloon()
+    {
+        let ball = document.getElementById('balloon');
+        let h = ball.style.height;
+        let w = ball.style.width;
+
+        ball.style.borderRadius = add_px(ball.style.borderRadius);
+        ball.style.height = add_px(h);
+        ball.style.width = add_px(w);
+        if (ball.classList.contains('red'))
+        {
+            ball.classList.remove('red')
+            ball.classList.add('green')
+        }
+        else if (ball.classList.contains('green')) {
+            ball.classList.remove('green')
+            ball.classList.add('blue')
+        }
+        else {
+            ball.classList.remove('blue')
+            ball.classList.add('red')
+        }
+    }
+
+</script>
+<body>
+<div onclick="update_balloon()" id="balloon" class="red" style="width: 200px; height: 200px; border-radius: 200px;">
+
+</div>
+</body>
+</html>
